@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- 
+    Name: Kevin Bennett
+    Date: 10/14/2025
+    CSC 372-01
+
+    This is the page for assignment 5, a rock paper scissors game. 
+    It includes sections for player selection, computer selection, and results of the round.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <section id="player-throw">
+        <img class="player" data-name="rock" src="images/rock.png" alt="Rock">
+        <img class="player" data-name="paper" src="images/paper.png" alt="Paper">
+        <img class="player" data-name="scissors" src="images/scissors.png" alt="Scissors">
+    </section>
+    <section id="computer-throw">
+        <img id="computer" src="images/question-mark.png" alt="Question Mark">
+    </section>
+    <section id="outcome">
+        <p>Result: <span id="result"></span></p>
+        <button id="replay">Play again</button>
+    </section>
+    <section id="scoreboard">
+        <p>Wins: <span id="wins">0</span></p>
+        <p>Loses: <span id="loses">0</span></p>
+        <p>Ties: <span id="ties">0</span></p>
+        <button id="reset">Reset Score</button>
+    </section>
+</body>
+</html>
