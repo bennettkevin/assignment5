@@ -39,7 +39,7 @@ resetScore.addEventListener('click', function() {
 /**
  * Function cycles through the computer choices.
  * It then stops the cycle, randomly selects a choice for the computer, and determines the winner.
- * @param event the event so the function knows which image was clicked. 
+ * @param {click} event the event so the function knows which image was clicked. 
  */
 function cycle(event) {
     let playerThrow = event.currentTarget;
@@ -80,8 +80,8 @@ function cycle(event) {
 
 /**
  * This function determines the winnder of the round.
- * @param player The choice the player made.
- * @param computer The choice the computer made.
+ * @param {string} player The choice the player made.
+ * @param {string} computer The choice the computer made.
  */
 function determineWinner(player, computer) {
     let result = document.querySelector("#result");
@@ -125,7 +125,7 @@ function determineWinner(player, computer) {
 
 /**
  * This function updates the scoreboard based on result.
- * @param result An integer representing the result of the round -1 for lose, 0 for tie, 1 for win, and 2 for reset.
+ * @param {number} result An integer representing the result of the round -1 for lose, 0 for tie, 1 for win, and 2 for reset.
  */
 function updateScoreboard(result) {
     let wins = document.querySelector("#wins");
